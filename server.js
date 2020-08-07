@@ -1,9 +1,10 @@
 const express = require("express");
 const mongodb = require("mongodb");
 const cors = require('cors');
-app.use(cors());
+
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 require("dotenv").config();
 const option = { useUnifiedTopology: true };
